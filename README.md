@@ -83,6 +83,19 @@ npm run build
 
 The output files will be in the `dist` directory.
 
+## 🚀 Deployment
+
+The easiest way to deploy this project is using **Vercel**:
+
+1.  Push your code to GitHub (as described above).
+2.  Go to [Vercel](https://vercel.com) and sign up/log in.
+3.  Click **"Add New Project"** and select **"Project"**.
+4.  Import your GitHub repository: `house-fix-build`.
+5.  Vercel will detect `Vite` automatically.
+6.  Click **"Deploy"**.
+
+Your site will be live in less than a minute!
+
 ## 📂 Project Structure
 
 ```
