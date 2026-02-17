@@ -1,0 +1,56 @@
+.services-page {
+    padding-top: var(--header-height);
+    min-height: 100vh;
+    background-color: var(--bg-body);
+}
+
+.services-header {
+    background-color: var(--bg-body);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    margin-bottom: 60px;
+    background: radial-gradient(circle at center, #1f2937 0%, var(--bg-body) 70%);
+}
+
+.services-header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    text-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+}
+
+.services-header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--text-muted);
+}
+
+.services-grid-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.custom-quote-banner {
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    padding: 60px;
+    text-align: center;
+    margin-bottom: 80px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border-color);
+}
+
+.custom-quote-banner h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--text-main);
+}
+
+.custom-quote-banner p {
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}

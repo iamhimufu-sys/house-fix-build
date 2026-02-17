@@ -1,0 +1,111 @@
+:root {
+  /* Enforce Dark Mode Palette by Default */
+
+  /* Primary Brand Color */
+  --primary-color: #f59e0b;
+  --primary-hover: #d97706;
+
+  /* Text Colors (Adapted for Dark Mode) */
+  --text-main: #f3f4f6;
+  /* Was text-dark, now light for dark bg */
+  --text-muted: #9ca3af;
+  /* Was accent-gray */
+  --text-inverse: #111827;
+  /* Dark text for buttons/light areas */
+
+  /* Background Colors (Dark Mode) */
+  --bg-body: #0f1419;
+  /* Deepest dark */
+  --bg-card: #1f2937;
+  /* Slightly lighter for cards */
+  --bg-input: #374151;
+  /* Inputs */
+
+  /* Borders */
+  --border-color: #374151;
+
+  /* Typography */
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+
+  /* Spacing */
+  --container-width: 1200px;
+  --header-height: 80px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-main);
+}
+
+p {
+  color: var(--text-muted);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-body);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-card);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
